@@ -1,37 +1,167 @@
 ---
-layout: tab
+layout: default
+nav: about
+title: About
+description: Bryan Lai's background, experience, and technical skills.
 ---
-<div class="focus card shadow mx-auto col-6 p-3 mb-5 black text-center">
-<h2 class="intro"> about me: </h2>
-<h4> recent grad at stony brook university (2020-2023) </h4>
-<h4> current masters student at gtech (2024-2026) </h4>
-<h4> double majored in CS and AMS </h4> 
-<h4> SWE planning to delve into the medical field </h4>
-</div>
-<div class="focus card mx-auto shadow col-md-6 p-3 mb-5 black text-center title">
-    Skills/Technologies
-    <br>
-    <div>
-    <svg class="icon" viewBox="0 0 128 128" width="30" height="30">
-    <path fill="#F34F29" d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z"></path>
-    </svg>
-    <svg class="icon" viewBox="0 0 128 128 " width="30" height="30">
-    <path fill="#0074BD" d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zm-2.988-13.665s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"></path><path fill="#EA2D2E" d="M69.802 61.271c6.025 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.792 15.635-29.58 0 .001-42.731 10.67-22.324 34.187z"></path><path fill="#0074BD" d="M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM49.912 70.294s-22.686 5.389-8.033 7.348c6.188.828 18.518.638 30.011-.326 9.39-.789 18.813-2.474 18.813-2.474s-3.308 1.419-5.704 3.053c-23.042 6.061-67.544 3.238-54.731-2.958 10.832-5.239 19.644-4.643 19.644-4.643zm40.697 22.747c23.421-12.167 12.591-23.86 5.032-22.285-1.848.385-2.677.72-2.677.72s.688-1.079 2-1.543c14.953-5.255 26.451 15.503-4.823 23.725 0-.002.359-.327.468-.617z"></path><path fill="#EA2D2E" d="M76.491 1.587S89.459 14.563 64.188 34.51c-20.266 16.006-4.621 25.13-.007 35.559-11.831-10.673-20.509-20.07-14.688-28.815C58.041 28.42 81.722 22.195 76.491 1.587z"></path><path fill="#0074BD" d="M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.577 7.231-19.186 3.612-42.854 3.191-56.887.874 0 .001 2.875 2.381 17.647 3.331z"></path>
-    </svg>
-    <svg class="icon" viewBox="0 0 128 128" width="30" height="30">
-    <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path><path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"></path>
-    </svg>
-    <svg class="icon" viewBox="0 0 128 128" width="30" height="30">
-    <path fill="url(#a)" d="M66.958.825a6.07 6.07 0 0 0-6.035 0L11.103 29.76c-1.895 1.072-2.96 3.095-2.96 5.24v57.988c0 2.143 1.183 4.167 2.958 5.24l49.82 28.934a6.07 6.07 0 0 0 6.036 0l49.82-28.935c1.894-1.072 2.958-3.096 2.958-5.24V35c0-2.144-1.183-4.167-2.958-5.24z"></path><path fill="url(#b)" d="M116.897 29.76 66.841.825A8.161 8.161 0 0 0 65.302.23L9.21 96.798a6.251 6.251 0 0 0 1.657 1.43l50.057 28.934c1.42.833 3.076 1.072 4.615.595l52.66-96.925a3.702 3.702 0 0 0-1.302-1.072z"></path><path fill="url(#c)" d="M116.898 98.225c1.42-.833 2.485-2.262 2.958-3.81L65.066.108c-1.42-.238-2.959-.119-4.26.715L11.104 29.639l53.606 98.355c.71-.12 1.54-.358 2.25-.715z"></path><defs><linearGradient id="a" x1="34.513" x2="27.157" y1="15.535" y2="30.448" gradientTransform="translate(-129.242 -73.715) scale(6.18523)" gradientUnits="userSpaceOnUse"><stop stop-color="#3F873F"></stop><stop offset=".33" stop-color="#3F8B3D"></stop><stop offset=".637" stop-color="#3E9638"></stop><stop offset=".934" stop-color="#3DA92E"></stop><stop offset="1" stop-color="#3DAE2B"></stop></linearGradient><linearGradient id="b" x1="30.009" x2="50.533" y1="23.359" y2="8.288" gradientTransform="translate(-129.242 -73.715) scale(6.18523)" gradientUnits="userSpaceOnUse"><stop offset=".138" stop-color="#3F873F"></stop><stop offset=".402" stop-color="#52A044"></stop><stop offset=".713" stop-color="#64B749"></stop><stop offset=".908" stop-color="#6ABF4B"></stop></linearGradient><linearGradient id="c" x1="21.917" x2="40.555" y1="22.261" y2="22.261" gradientTransform="translate(-129.242 -73.715) scale(6.18523)" gradientUnits="userSpaceOnUse"><stop offset=".092" stop-color="#6ABF4B"></stop><stop offset=".287" stop-color="#64B749"></stop><stop offset=".598" stop-color="#52A044"></stop><stop offset=".862" stop-color="#3F873F"></stop></linearGradient></defs>
-    </svg>
-    <svg class="icon" viewBox="0 0 128 128" width="30" height="30">
-    <g fill="#61DAFB"><circle cx="64" cy="64" r="11.4"></circle><path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"></path></g>
-    </svg>
-    <svg class="icon" viewBox="0 0 128 128" width="30" height="30">
-    <path fill="#75aadb" d="M71.4 38.8c-1.5-.6-3.9-1-6.9-1.1-4.2-.1-9 .4-9.2.5v20c13.3.6 15.5-1.7 15.5-1.7 11.6-5.9 4.3-16.2.6-17.7z"></path><path fill="#75aadb" d="M64 0C28.6 0 0 28.6 0 64s28.6 64 64 64 64-28.6 64-64S99.3 0 64 0zm28.6 89.8H82L64.4 63.5h-9V84h9v5.8H41.5v-5.7l7.6-.1-.1-45.9c-.8-.2-7.5-.8-7.5-.8V32c1 1 7.9 1.2 7.9 1.2 1.6.1 3.9.2 5.2-.1 9.3-1.7 16.4-.4 16.4-.4 14 3.2 14.2 15.8 10.3 22.6-3.5 5.8-10.3 7.2-10.3 7.2l14.4 21.8 7.2-.1v5.6z"></path><path d="M41.595 87.073v-2.726l1.82-.141a59.125 59.125 0 013.752-.144h1.931V37.996l-.938-.127c-.516-.07-2.204-.248-3.752-.397l-2.813-.27v-2.51c0-2.332.027-2.495.39-2.3 1.583.847 10.7 1.07 15.83.388 4.202-.558 11.495-.425 14.035.257 5.483 1.472 9.11 4.646 10.824 9.473.717 2.018.817 5.847.216 8.224-.903 3.572-2.39 6.048-4.865 8.101-1.482 1.23-4.847 3.03-6.145 3.29-.397.079-.772.224-.832.321-.06.098 3.123 5.072 7.075 11.054l7.184 10.876 3.633-.068 3.634-.068V89.8l-5.242-.008-5.24-.007-8.82-13.234-8.817-13.234h-9.178V84.061h9.049V89.8H41.595zm25.158-29.162c3.476-.55 7.265-2.774 8.973-5.263 2.511-3.663 1.537-8.99-2.294-12.547-1.357-1.26-2.205-1.63-4.794-2.1-2.124-.386-8.66-.454-11.706-.122l-1.544.168-.058 10.083-.057 10.082.72.106c1.366.2 8.67-.075 10.76-.407z" fill="#fff" stroke="#fff" stroke-width=".788"></path>
-    </svg>
-    <svg class="icon" viewBox="0 0 128 128" width="30" height="30">
-    <linearGradient id="python-original-a" gradientUnits="userSpaceOnUse" x1="70.252" y1="1237.476" x2="170.659" y2="1151.089" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#5A9FD4"></stop><stop offset="1" stop-color="#306998"></stop></linearGradient><linearGradient id="python-original-b" gradientUnits="userSpaceOnUse" x1="209.474" y1="1098.811" x2="173.62" y2="1149.537" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#FFD43B"></stop><stop offset="1" stop-color="#FFE873"></stop></linearGradient><path fill="url(#python-original-a)" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z" transform="translate(0 10.26)"></path><path fill="url(#python-original-b)" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z" transform="translate(0 10.26)"></path><radialGradient id="python-original-c" cx="1825.678" cy="444.45" r="26.743" gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B8B8B8" stop-opacity=".498"></stop><stop offset="1" stop-color="#7F7F7F" stop-opacity="0"></stop></radialGradient><path opacity=".444" fill="url(#python-original-c)" d="M97.309 119.597c0 3.543-14.816 6.416-33.091 6.416-18.276 0-33.092-2.873-33.092-6.416 0-3.544 14.815-6.417 33.092-6.417 18.275 0 33.091 2.872 33.091 6.417z"></path>
-    </svg>
+<section class="section" style="padding-top:132px;">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">About Me</span>
+      <h2>Full-stack software engineer exploring healthcare technology</h2>
+      <p>
+        I'm a Georgia Tech M.S. Computer Science candidate specializing in Human-Computer Interaction,
+        and a Software Engineer at Soter Technologies, based in Brooklyn, NY. My work has been
+        full-stack: building secure, usable systems end to end. Through my graduate coursework and
+        side projects I've been studying health informatics and standards like FHIR, and I'm looking
+        to bring that interest into hands-on healthcare technology work.
+      </p>
     </div>
-</div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Education</span>
+      <h2>Academic background</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item" data-reveal>
+        <span class="when">Aug 2024 – Aug 2026</span>
+        <h3>M.S. in Computer Science, Human-Computer Interaction</h3>
+        <span class="where">Georgia Institute of Technology · Atlanta, GA · GPA 3.9/4.0</span>
+        <ul>
+          <li>Coursework spanning big data in healthcare, health informatics, and human-centered interface design.</li>
+        </ul>
+      </div>
+      <div class="timeline-item" data-reveal>
+        <span class="when">Aug 2020 – Dec 2023</span>
+        <h3>B.S. in Computer Science &amp; B.S. in Applied Mathematics and Statistics</h3>
+        <span class="where">Stony Brook University · New York, NY</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Experience</span>
+      <h2>Where I've worked</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item" data-reveal>
+        <span class="when">Jul 2024 – Present</span>
+        <h3>Software Engineer</h3>
+        <span class="where">Soter Technologies · Ronkonkoma, NY</span>
+        <ul>
+          <li>Designed interfaces, UML diagrams, and GUIs for an internal shipping platform using ReactJS, MUI, and MySQL, resulting in a 20% increase in user engagement.</li>
+          <li>Implemented Microsoft Azure API integration to enable work/school account logins on a vape-alert platform, letting users retrieve, create, and delete account data seamlessly.</li>
+          <li>Implemented token-based authentication across multiple internal services, including JWT validation and token expiration handling, as part of ongoing security-focused platform work.</li>
+        </ul>
+      </div>
+      <div class="timeline-item" data-reveal>
+        <span class="when">Apr 2024 – Jun 2024</span>
+        <h3>Support Engineer</h3>
+        <span class="where">Soter Technologies · Ronkonkoma, NY</span>
+        <ul>
+          <li>Oversaw the IT support department, providing consulting, technical support, and problem tracking via Zoho, Confluence, and Jira, achieving a 92% customer rating.</li>
+        </ul>
+      </div>
+      <div class="timeline-item" data-reveal>
+        <span class="when">Nov 2022 – Feb 2023</span>
+        <h3>Developer Intern</h3>
+        <span class="where">Monumenta · Remote</span>
+        <ul>
+          <li>Revitalized the user experience of the RPG classes page by integrating Vue.js and Bootstrap.</li>
+          <li>Identified and fixed over 10 bugs within a 6-year-old Java Plugin/Gradle project, improving reliability.</li>
+        </ul>
+      </div>
+      <div class="timeline-item" data-reveal>
+        <span class="when">May 2022 – Aug 2022</span>
+        <h3>Research &amp; Development Intern</h3>
+        <span class="where">Soter Technologies · Ronkonkoma, NY</span>
+        <ul>
+          <li>Coordinated with a team of three to build a healthcare social platform connecting hospital patients with loved ones.</li>
+          <li>Reduced costs by 25% by switching messaging API providers and improved mobile device authentication.</li>
+          <li>Authored technical documentation for Flysense's API and engineered a mobile app integrating vaping-detection and security APIs with instant push notifications.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Coursework</span>
+      <h2>Relevant graduate coursework</h2>
+    </div>
+    <div class="coursework-grid">
+      <div class="card course-card" data-reveal>
+        <h4>CS 6250 · Big Data in Healthcare</h4>
+        <p>Scalable machine learning and big data systems (Hadoop, Spark, Graph DB) applied to healthcare analytics, predictive modeling, and patient similarity.</p>
+      </div>
+      <div class="card course-card" data-reveal>
+        <h4>CS 6440 · Health Informatics</h4>
+        <p>Hands-on work with the FHIR healthcare interoperability standard and Docker-based containerization for healthcare systems.</p>
+      </div>
+      <div class="card course-card" data-reveal>
+        <h4>Human-Computer Interaction</h4>
+        <p>User-centered interface design, usability evaluation, and participant-based research methods.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Skills</span>
+      <h2>Technical toolkit</h2>
+    </div>
+    <div class="skills-columns">
+      <div data-reveal>
+        <h4>Languages</h4>
+        <div class="chip-group">
+          <span class="chip">Java</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Python</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">C</span>
+        </div>
+      </div>
+      <div data-reveal>
+        <h4>Frameworks &amp; Libraries</h4>
+        <div class="chip-group">
+          <span class="chip">ReactJS</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Bootstrap</span>
+          <span class="chip">Pandas</span>
+          <span class="chip">React Native</span>
+        </div>
+      </div>
+      <div data-reveal>
+        <h4>DevOps &amp; Tools</h4>
+        <div class="chip-group">
+          <span class="chip">Docker</span>
+          <span class="chip">Git</span>
+          <span class="chip">AWS</span>
+          <span class="chip">Azure</span>
+          <span class="chip">Visual Studio</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container" style="text-align:center;" data-reveal>
+    <a class="btn btn-primary" href="/img/resume.pdf" target="_blank" rel="noopener">
+      <i class="fa-solid fa-file-arrow-down"></i> Download full resume
+    </a>
+  </div>
+</section>
