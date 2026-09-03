@@ -6,15 +6,19 @@
 :root {
   --color-primary: #0d9488;
   --color-primary-dark: #0f766e;
+  --color-primary-strong: #0f766e;
   --color-primary-light: #ccfbf1;
   --color-primary-tint: #f0fdfa;
   --color-accent: #2563eb;
   --color-bg: #ffffff;
   --color-bg-alt: #f7faf9;
+  --color-surface: #ffffff;
+  --color-heading: #0f2a26;
   --color-text: #1e293b;
   --color-text-muted: #5b6b76;
   --color-text-soft: #8394a0;
   --color-border: #e4eae9;
+  --color-nav-bg: rgba(255, 255, 255, 0.86);
   --shadow-sm: 0 1px 3px rgba(16, 40, 34, 0.06);
   --shadow-md: 0 8px 24px rgba(16, 40, 34, 0.08);
   --shadow-lg: 0 20px 45px rgba(16, 40, 34, 0.14);
@@ -26,6 +30,50 @@
   --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   --nav-height: 76px;
   --max-width: 1120px;
+}
+
+/* Dark palette: applied automatically by OS/browser preference, or forced
+   explicitly via [data-theme] (set by the toggle button in the nav). */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-primary: #2dd4bf;
+    --color-primary-dark: #5eead4;
+    --color-primary-light: #134e4a;
+    --color-primary-tint: #10302c;
+    --color-accent: #60a5fa;
+    --color-bg: #0b1120;
+    --color-bg-alt: #0f172a;
+    --color-surface: #141e30;
+    --color-heading: #f1f5f9;
+    --color-text: #e2e8f0;
+    --color-text-muted: #97a6b5;
+    --color-text-soft: #71818f;
+    --color-border: #233047;
+    --color-nav-bg: rgba(11, 17, 32, 0.86);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.24);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.32);
+    --shadow-lg: 0 20px 45px rgba(0, 0, 0, 0.45);
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-primary: #2dd4bf;
+  --color-primary-dark: #5eead4;
+  --color-primary-light: #134e4a;
+  --color-primary-tint: #10302c;
+  --color-accent: #60a5fa;
+  --color-bg: #0b1120;
+  --color-bg-alt: #0f172a;
+  --color-surface: #141e30;
+  --color-heading: #f1f5f9;
+  --color-text: #e2e8f0;
+  --color-text-muted: #97a6b5;
+  --color-text-soft: #71818f;
+  --color-border: #233047;
+  --color-nav-bg: rgba(11, 17, 32, 0.86);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.24);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.32);
+  --shadow-lg: 0 20px 45px rgba(0, 0, 0, 0.45);
 }
 
 /* ---------- Reset ---------- */
@@ -73,7 +121,7 @@ ul {
 
 h1, h2, h3, h4, h5 {
   font-family: var(--font-heading);
-  color: #0f2a26;
+  color: var(--color-heading);
   line-height: 1.25;
   margin: 0 0 0.5em;
 }
@@ -160,7 +208,7 @@ main {
 }
 
 .btn-primary:hover {
-  background: var(--color-primary-dark);
+  background: var(--color-primary-strong);
   color: #fff;
   box-shadow: 0 14px 28px rgba(13, 148, 136, 0.34);
 }
@@ -192,7 +240,7 @@ main {
   height: var(--nav-height);
   display: flex;
   align-items: center;
-  background: rgba(255, 255, 255, 0.86);
+  background: var(--color-nav-bg);
   backdrop-filter: saturate(180%) blur(14px);
   -webkit-backdrop-filter: saturate(180%) blur(14px);
   border-bottom: 1px solid var(--color-border);
@@ -221,7 +269,7 @@ main {
   font-family: var(--font-heading);
   font-weight: 600;
   font-size: 1.08rem;
-  color: #0f2a26;
+  color: var(--color-heading);
 }
 
 .brand-mark {
@@ -270,13 +318,46 @@ main {
   gap: 14px;
 }
 
+.theme-toggle {
+  display: flex;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.05rem;
+  transition: background var(--transition), border-color var(--transition), color var(--transition);
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary-dark);
+}
+
+.theme-toggle .fa-sun {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle .fa-moon {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle .fa-sun {
+  display: block;
+}
+
 .nav-toggle {
   display: none;
   width: 42px;
   height: 42px;
   border-radius: 10px;
   border: 1px solid var(--color-border);
-  background: #fff;
+  background: var(--color-surface);
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -370,7 +451,7 @@ main {
   position: absolute;
   inset: -22px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-primary-light), #ffffff);
+  background: linear-gradient(135deg, var(--color-primary-light), var(--color-surface));
   z-index: 0;
 }
 
@@ -381,7 +462,7 @@ main {
   height: 300px;
   object-fit: cover;
   border-radius: 50%;
-  border: 6px solid #fff;
+  border: 6px solid var(--color-surface);
   box-shadow: var(--shadow-lg);
 }
 
@@ -391,7 +472,7 @@ main {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: #fff;
+  background: var(--color-surface);
   border-radius: 999px;
   padding: 10px 16px;
   box-shadow: var(--shadow-md);
@@ -422,7 +503,7 @@ main {
 }
 
 .snapshot-card {
-  background: #fff;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: 28px;
@@ -460,7 +541,7 @@ main {
 
 /* ---------- Cards (generic) ---------- */
 .card {
-  background: #fff;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
@@ -864,7 +945,7 @@ main {
 .form-field textarea:focus {
   outline: none;
   border-color: var(--color-primary);
-  background: #fff;
+  background: var(--color-surface);
 }
 
 .contact-form form > p.hint {
@@ -901,7 +982,7 @@ main {
   width: 38px;
   height: 38px;
   border-radius: 10px;
-  background: #fff;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   display: flex;
   align-items: center;
@@ -1026,7 +1107,7 @@ main {
     flex-direction: column;
     align-items: stretch;
     gap: 4px;
-    background: #fff;
+    background: var(--color-surface);
     padding: 14px;
     border-bottom: 1px solid var(--color-border);
     box-shadow: var(--shadow-md);

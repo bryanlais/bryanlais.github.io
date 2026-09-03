@@ -3,6 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function () {
+  try {
+    var stored = localStorage.getItem("theme");
+    var theme = stored || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  } catch (e) {}
+})();
+</script>
 <title>Home · Bryan Lai</title>
 <meta name="description" content="Bryan Lai, full-stack Software Engineer based in Brooklyn, NY.">
 <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
@@ -32,6 +41,10 @@
       <a class="btn btn-primary" href="/img/resume.pdf" target="_blank" rel="noopener">
         <i class="fa-solid fa-file-arrow-down"></i> Resume
       </a>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-sun"></i>
+      </button>
       <button class="nav-toggle" type="button" aria-label="Toggle menu">
         <span></span>
       </button>
@@ -44,7 +57,7 @@
   <div class="container hero-grid">
     <div class="hero-copy" data-reveal="">
       <span class="eyebrow">Software Engineer · Full-Stack</span>
-      <h1>Hi, I'm Bryan Lai, a full-stack <span class="accent">software engineer</span> exploring healthcare technology.</h1>
+      <h1>Hi, I'm Bryan! A full-stack <span class="accent">software engineer</span> exploring healthcare technology.</h1>
       <p class="lede">
         M.S. Computer Science candidate at Georgia Tech specializing in Human-Computer Interaction,
         and Software Engineer at Soter Technologies building full-stack, security-minded applications.

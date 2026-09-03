@@ -1,6 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
   document.body.classList.add("loaded");
 
+  var themeToggle = document.querySelector(".theme-toggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
+      var current = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      var next = current === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      try {
+        localStorage.setItem("theme", next);
+      } catch (e) {}
+    });
+  }
+
   var nav = document.querySelector(".site-nav");
   var toggle = document.querySelector(".nav-toggle");
 

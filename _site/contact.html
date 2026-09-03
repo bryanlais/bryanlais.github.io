@@ -3,6 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function () {
+  try {
+    var stored = localStorage.getItem("theme");
+    var theme = stored || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  } catch (e) {}
+})();
+</script>
 <title>Contact · Bryan Lai</title>
 <meta name="description" content="Get in touch with Bryan Lai.">
 <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
@@ -32,6 +41,10 @@
       <a class="btn btn-primary" href="/img/resume.pdf" target="_blank" rel="noopener">
         <i class="fa-solid fa-file-arrow-down"></i> Resume
       </a>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-sun"></i>
+      </button>
       <button class="nav-toggle" type="button" aria-label="Toggle menu">
         <span></span>
       </button>

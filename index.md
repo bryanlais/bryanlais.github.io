@@ -8,7 +8,7 @@ description: Bryan Lai, full-stack Software Engineer based in Brooklyn, NY.
   <div class="container hero-grid">
     <div class="hero-copy" data-reveal>
       <span class="eyebrow">Software Engineer · Full-Stack</span>
-      <h1>Hi, I'm Bryan Lai, a full-stack <span class="accent">software engineer</span> exploring healthcare technology.</h1>
+      <h1>Hi, I'm Bryan! A full-stack <span class="accent">software engineer</span> exploring healthcare technology.</h1>
       <p class="lede">
         M.S. Computer Science candidate at Georgia Tech specializing in Human-Computer Interaction,
         and Software Engineer at Soter Technologies building full-stack, security-minded applications.
