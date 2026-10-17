@@ -1,17 +1,23 @@
 ---
 layout: default
 ---
-<article class="section post-article">
-  <div class="container">
-    <a class="back-link" href="/blog"><i class="fa-solid fa-arrow-left"></i> Back to blog</a>
+<header class="banner scene" data-fireflies="22">
+  {% include scene-banner.html %}
+  <h1>{{ page.title }}</h1>
+  {% include ornament.html %}
+  <p><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
+</header>
 
-    <div class="post-meta">
-      <i class="fa-regular fa-calendar"></i> {{ page.date | date: "%B %-d, %Y" }}
-    </div>
-    <h1>{{ page.title }}</h1>
-
-    <div class="post-content">
-      {{ content }}
-    </div>
+<article class="post-article narrow">
+  {% if page.image %}
+    {% assign img_path = page.image | remove: "../" | remove_first: "/" | prepend: "/" %}
+    {% assign img_file = site.static_files | where: "path", img_path | first %}
+    {% if img_file %}
+    <figure class="post-figure"><img src="{{ img_path }}" alt=""></figure>
+    {% endif %}
+  {% endif %}
+  <div class="prose">
+    {{ content }}
   </div>
+  <a class="link-arrow back" href="/blog"><span aria-hidden="true">&larr;</span> All posts</a>
 </article>

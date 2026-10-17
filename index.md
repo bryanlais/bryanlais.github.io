@@ -2,110 +2,103 @@
 layout: default
 nav: home
 title: Home
-description: Bryan Lai, full-stack Software Engineer based in Brooklyn, NY.
+description: Bryan Lai is a full-stack software engineer in Brooklyn, NY, building healthcare software on FHIR, with an M.S. in HCI from Georgia Tech.
 ---
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy" data-reveal>
-      <span class="eyebrow">Software Engineer · Full-Stack</span>
-      <h1>Hi, I'm Bryan! A full-stack <span class="accent">software engineer</span> exploring healthcare technology.</h1>
-      <p class="lede">
-        M.S. Computer Science candidate at Georgia Tech specializing in Human-Computer Interaction,
-        and Software Engineer at Soter Technologies building full-stack, security-minded applications.
-        I've been studying health informatics and standards like FHIR, and I'm looking to bring
-        that interest into hands-on healthcare technology work.
-      </p>
-      <ul class="hero-meta">
-        <li><i class="fa-solid fa-graduation-cap"></i> M.S. Computer Science, Georgia Tech</li>
-        <li><i class="fa-solid fa-briefcase"></i> Software Engineer, Soter Technologies</li>
-        <li><i class="fa-solid fa-location-dot"></i> Brooklyn, NY</li>
-      </ul>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="/projects">View Projects <i class="fa-solid fa-arrow-right"></i></a>
-        <a class="btn btn-outline" href="/contact">Get in touch</a>
-      </div>
-    </div>
-    <div class="hero-portrait" data-reveal>
-      <div class="ring"></div>
-      <img src="/img/nefer.png" alt="Bryan Lai's profile picture">
-      <div class="pill pill-top"><i class="fa-solid fa-code"></i> Full-Stack &amp; HCI</div>
-      <div class="pill pill-bottom"><i class="fa-solid fa-shield-halved"></i> Secure by design</div>
+<header class="hero scene" data-fireflies="46">
+  {% include scene-hero.html %}
+  <div class="hero-copy">
+    <h1 class="hero-name" data-rise style="--i:0">Bryan Lai</h1>
+    <div class="hero-ornament" data-rise style="--i:1">{% include ornament.html %}</div>
+    <p class="hero-line" data-rise style="--i:2">Full-stack software engineer in Brooklyn, building healthcare software that people can lean on.</p>
+    <div class="hero-actions" data-rise style="--i:3">
+      <a class="button" href="#work">See my work</a>
+      <a class="button button-ghost" href="/img/resume.pdf" target="_blank" rel="noopener">Résumé</a>
     </div>
   </div>
-</section>
+</header>
 
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-head" data-reveal>
-      <span class="eyebrow">Snapshot</span>
-      <h2>What I'm focused on</h2>
-      <p>A quick look at where I've studied, what I build day-to-day, and the problems I care about most.</p>
-    </div>
-    <div class="snapshot-grid">
-      <div class="snapshot-card" data-reveal>
-        <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
-        <h3>Education</h3>
-        <p>M.S. in Computer Science (HCI) at Georgia Tech, following a B.S. in Computer Science and Applied Math &amp; Statistics from Stony Brook University.</p>
-      </div>
-      <div class="snapshot-card" data-reveal>
-        <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
-        <h3>Experience</h3>
-        <p>Building secure, full-stack interfaces and authentication systems, from client-facing tools to backend integrations.</p>
-      </div>
-      <div class="snapshot-card" data-reveal>
-        <div class="icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
-        <h3>Focus</h3>
-        <p>Human-centered design and secure engineering, with a growing interest in health informatics and standards like FHIR.</p>
-      </div>
-    </div>
+<section class="intro wrap" aria-labelledby="intro-title">
+  <div class="avatar" data-reveal>
+    <img class="face" src="/img/nefer.png" width="256" height="256" alt="Bryan's avatar, Nefer">
+    <img class="moss-rim" src="/img/moss/clump-set2.webp" alt="">
+    <img class="moss-rim r" src="/img/moss/clump-a.webp" alt="">
   </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-head" data-reveal>
-      <span class="eyebrow">Selected Work</span>
-      <h2>A few recent projects</h2>
-      <p>Full-stack applications, data visualization, and personal explorations in health tech.</p>
-    </div>
-    <div class="project-grid">
-      <div class="card project-card" data-reveal>
-        <div class="project-thumb icon-only"><i class="fa-solid fa-notes-medical"></i></div>
-        <div class="project-body">
-          <h3>MedTracker</h3>
-          <p>Full-stack healthcare tracking app on a FastAPI + FHIR backend with Firebase auth and a React frontend, built to track medication adherence.</p>
-          <div class="tag-row">
-            <span class="tag">FastAPI</span>
-            <span class="tag">FHIR</span>
-            <span class="tag">Firebase</span>
-          </div>
-        </div>
-      </div>
-      <div class="card project-card" data-reveal>
-        <div class="project-thumb"><img src="/img/iasonotes.png" alt="Iasonotes screenshot"></div>
-        <div class="project-body">
-          <h3>Iasonotes</h3>
-          <p>A status-update web app for hospital patients to post health updates that automatically notify subscribed loved ones.</p>
-          <div class="tag-row">
-            <span class="tag">Full-Stack</span>
-            <span class="tag">Healthcare</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="btn-row" style="justify-content:center; margin-top:36px;" data-reveal>
-      <a class="btn btn-outline" href="/projects">See all projects <i class="fa-solid fa-arrow-right"></i></a>
-    </div>
+  <div class="intro-text" data-reveal style="--d:1">
+    <h2 id="intro-title" class="section-title">Hello, I'm Bryan</h2>
+    <p class="lead">
+      I'm a full-stack engineer at Altro Health, building clinical tools and lab services on
+      Next.js, MongoDB and the FHIR standard. Before that I spent two years building secure
+      software at Soter Technologies, and I studied human-computer interaction and health
+      informatics at Georgia Tech.
+    </p>
   </div>
+  <ul class="facts">
+    <li data-reveal style="--d:1"><span class="fact-k">Altro Health</span><span class="fact-v">Full stack engineer since 2026</span></li>
+    <li data-reveal style="--d:2"><span class="fact-k">Georgia Tech</span><span class="fact-v">M.S. Computer Science, HCI</span></li>
+    <li data-reveal style="--d:3"><span class="fact-k">FHIR</span><span class="fact-v">The health data standard I build on</span></li>
+    <li data-reveal style="--d:4"><span class="fact-k">Brooklyn, NY</span><span class="fact-v">Home</span></li>
+  </ul>
 </section>
 
-<section class="section section-alt">
-  <div class="container" style="text-align:center;" data-reveal>
-    <span class="eyebrow">Let's talk</span>
-    <h2>Interested in full-stack engineering, HCI, or healthcare technology?</h2>
-    <p style="max-width:560px; margin:0 auto 24px;">Whether it's a role, a collaboration, or just a question about my work, I'd love to hear from you.</p>
-    <div class="btn-row" style="justify-content:center;">
-      <a class="btn btn-primary" href="/contact">Contact me <i class="fa-solid fa-paper-plane"></i></a>
+<section class="work wrap" id="work" aria-labelledby="work-title">
+  <header class="section-head" data-reveal>
+    <h2 id="work-title" class="section-title">Projects</h2>
+    {% include ornament.html %}
+  </header>
+
+  <article class="feature panel" data-reveal>
+    <div class="feature-text">
+      <h3>MedTracker</h3>
+      <p>A medication-adherence tracker. FastAPI on the FHIR standard behind it, Firebase for sign-in and storage, Redis for fast reads, and a React front end.</p>
+      <p class="stack">FastAPI · FHIR · Firebase · Redis · React</p>
+    </div>
+    <div class="feature-demo">
+      {% include medtracker.html %}
+    </div>
+  </article>
+
+  <div class="pair">
+    <article class="panel shot" data-reveal>
+      <div class="shot-frame"><img src="/img/iasonotes.png" width="1886" height="862" alt="The IasoNotes landing page: alert family and friends about your recovery status" loading="lazy"></div>
+      <h3>IasoNotes</h3>
+      <p>Patients post one status update from the hospital and everyone who subscribed hears it, so nobody has to repeat the same news.</p>
+      <p class="stack">Full-stack · Healthcare · Notifications</p>
+    </article>
+    <article class="panel shot" data-reveal style="--d:1">
+      <div class="shot-frame"><img src="/img/fakestackoverflow.png" width="3115" height="1087" alt="The FakeStackOverflow sign-in screen" loading="lazy"></div>
+      <h3>FakeStackOverflow</h3>
+      <p>The core of Stack Overflow rebuilt end to end: questions, answers, tags and votes.</p>
+      <p class="stack">Full-stack · Web app</p>
+    </article>
+  </div>
+  <p class="more" data-reveal><a class="link-arrow" href="/projects">Redistricting maps, a Spotify data dashboard and more <span aria-hidden="true">&rarr;</span></a></p>
+</section>
+
+<section class="journey wrap" aria-labelledby="journey-title">
+  <header class="section-head" data-reveal>
+    <h2 id="journey-title" class="section-title">The path so far</h2>
+    {% include ornament.html %}
+  </header>
+  <ol class="vine">
+    <li data-reveal><span class="when">2026 – now</span><h3>Full Stack Engineer II, Altro Health</h3><p>Clinical operations tools and a new mobile phlebotomy lab offering, built on Next.js, MongoDB, Google Cloud and FHIR.</p></li>
+    <li data-reveal><span class="when">2024 – 2026</span><h3>Software Engineer, Soter Technologies</h3><p>Token-based authentication for eMedNY healthcare systems, Azure work and school sign-in, and React interfaces for an internal shipping platform.</p></li>
+    <li data-reveal><span class="when">2024 – 2026</span><h3>M.S. Computer Science, Georgia Tech</h3><p>Human-computer interaction, with coursework in health informatics and big data in healthcare.</p></li>
+    <li data-reveal><span class="when">2024</span><h3>Support Engineer, Soter Technologies</h3><p>Ran IT support and problem tracking with a 92% customer rating.</p></li>
+    <li data-reveal><span class="when">2022 – 2023</span><h3>Developer Intern, Monumenta</h3><p>Rebuilt the RPG classes page in Vue.js and fixed more than ten bugs in a six-year-old Java plugin.</p></li>
+    <li data-reveal><span class="when">2022</span><h3>R&amp;D Intern, Soter Technologies</h3><p>Helped build a social platform that connects hospital patients with their loved ones.</p></li>
+    <li data-reveal><span class="when">2020 – 2023</span><h3>B.S. Computer Science and Applied Math, Stony Brook</h3></li>
+  </ol>
+  <p class="more" data-reveal><a class="link-arrow" href="/about">Full experience, coursework and skills <span aria-hidden="true">&rarr;</span></a></p>
+</section>
+
+<section class="rest scene" data-fireflies="26" aria-labelledby="rest-title">
+  {% include scene-bench.html %}
+  <div class="rest-copy" data-reveal>
+    <h2 id="rest-title" class="section-title">Rest a while</h2>
+    <p>Have a role, a project or a question? I'd love to hear it.</p>
+    <div class="hero-actions">
+      <a class="button" href="mailto:{{ site.email }}">Email me</a>
+      <a class="button button-ghost" href="https://www.linkedin.com/in/bryanlais/" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </section>

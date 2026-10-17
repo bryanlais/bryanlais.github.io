@@ -21,8 +21,8 @@
 title: Bryan Lai
 email: bryanjlais@gmail.com
 description: >-
-  Full-stack Software Engineer and Georgia Tech HCI graduate student
-  based in Brooklyn, NY, interested in healthcare technology.
+  Full-stack engineer at Altro Health and Georgia Tech HCI graduate,
+  based in Brooklyn, NY, building healthcare software on FHIR.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bryanlai.com" # the base hostname & protocol for your site
 github_username: bryanlais
