@@ -1,0 +1,32 @@
+{% comment %}
+  A working sketch of MedTracker's adherence view. Each dose is a mossberry;
+  the readout recomputes adherence for the week. Without JavaScript the sample week
+  and its numbers still read correctly, the buttons just don't toggle.
+{% endcomment %}
+<div class="med" data-med>
+  <p class="med-title">Sample week · one tablet, twice a day</p>
+  <table class="med-grid">
+    <caption class="sr-only">Doses taken this week. Each button toggles a dose.</caption>
+    <thead>
+      <tr><th scope="col"><span class="sr-only">Dose</span></th><th scope="col">Mon</th><th scope="col">Tue</th><th scope="col">Wed</th><th scope="col">Thu</th><th scope="col">Fri</th><th scope="col">Sat</th><th scope="col">Sun</th></tr>
+    </thead>
+    <tbody>
+      {% assign am = "1,1,1,1,1,0,1" | split: "," %}
+      {% assign pm = "1,0,1,1,0,1,1" | split: "," %}
+      {% assign days = "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday" | split: "," %}
+      <tr>
+        <th scope="row">AM</th>
+        {% for d in am %}<td><button type="button" class="dose" aria-pressed="{% if d == '1' %}true{% else %}false{% endif %}" aria-label="{{ days[forloop.index0] }} morning dose"><img src="/img/moss/berry.webp" width="65" height="100" alt=""></button></td>{% endfor %}
+      </tr>
+      <tr>
+        <th scope="row">PM</th>
+        {% for d in pm %}<td><button type="button" class="dose" aria-pressed="{% if d == '1' %}true{% else %}false{% endif %}" aria-label="{{ days[forloop.index0] }} evening dose"><img src="/img/moss/berry.webp" width="65" height="100" alt=""></button></td>{% endfor %}
+      </tr>
+    </tbody>
+  </table>
+  <div class="med-readout" aria-live="polite">
+    <p class="med-pct" data-med-pct>79%</p>
+    <p class="med-note" data-med-note>11 of 14 doses taken, under the 80% line commonly used to define adherence.</p>
+  </div>
+  <p class="med-hint">Tap a berry to mark a dose taken or missed.</p>
+</div>
